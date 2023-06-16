@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Meta data part -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Assignment 1: Movie Poster - PARASITE</title>
+    <meta name="description" content="In this assignment we will be recreating a Poster Movie using CSS Flex">
+    <meta name="robots" content="noindex, nofollow">
+
+    <!-- A short review about PARASITE(2019) -->
+    <!-- Parasite – original Korean title: 기생충 – is a 2019 South Korean dark comedy thriller
+         directed by the acclaimed Bong Joon Ho. This movie won the Palme d’Or in the 2019
+         Cannes Film Festival and after that in 2020 it won the leading four awards at
+         the 92nd Academy Awards (OSCARs) including Best Picture-->
+    <!-- About this movie, let's share what the director answered in an interview when
+         asked why did he think the movie was well received from many countries in the world:
+         "there is no borderline between countries now because we all live in the same country,
+         it's called capitalism."-->
+
+    <!-- adding 5 Google Fonts: Lora, Sawarabi Gothic,EB Garamond,Montserrat, and Oswald -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600&family=Lora:wght@400;500&family=Montserrat:wght@300;500&family=Oswald:wght@300&family=Sawarabi+Gothic&display=swap" rel="stylesheet">
+
+    <!-- adding our CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<!-- I choose to work with Flexbox -->
+<body class="flex-lesson">
+    <header>
+     <!-- We put here 3 hiperlinks, the first for the Poster, the second for the official website and the last for the trailer -->
+        <nav>
+            <menu>
+                <li><a href="./img/MoviePoster.jpg" target = "_blank">Original Poster </a></li>
+                <li><a href="https://www.parasitemovie.co.uk/" target = "_blank">Official Website</a></li>
+                <li><a href="https://www.youtube.com/watch?v=SEUXfv87Wpk" target = "_blank">Trailer in youtube</a></li>
+            </menu>
+        </nav>
+    </header>
+    <div>
+      <main>
+       <section>
+       <!-- In this first section I put the closest image to the Poster with no text -->
+       <!-- The image that I found only has a small korean text, so it works for the assignment -->
+       <!-- The image that I found has less space in the end than the original poster-->
+              <div>
+                  <figure>
+                      <!-- Here will be the best Cannes Logo that I found -->
+                   <img src="./img/Cannes_logo.png" alt="image 1">
+               </figure>
+           </div>
+           <div><!-- Here will be the text listing the awards: "BEST..." sentences -->
+               <h2>BEST PICTURE<br>
+                   BEST DIRECTOR<br>
+                   BEST INTERNATIONAL FILM<br>
+                   BEST ORIGINAL SCREENPLAY<br>
+                   <span class="big-text">2020 ACADEMY AWARDS</span><br></h2> <!-- this  last sentence has a bigger size than the previous  -->
+           </div>
+           <div><!-- this div will be for the Movie Title -->
+               <h1 class="MT">PARASITE</h1>
+               <!-- There is only one h1 in a html code, and this is where the Movie Tittle goes -->
+           </div>
+           <div><!-- this div will be for the text under the Movie Title -->
+               <h3><span class="mild-text">A FILM BY</span> BONG JOON HO</h3>
+               <!--  I used a class called "mild-text" to make a contrast between the words: "A FILM BY" and the name of the director-->
+            </div>
+            <div><!-- this div will be for the last sentence over the poster -->
+               <h4>ACT LIKE YOU OWN THE PLACE</h4>
+           </div>
+       </section>
+       <section>
+       <!-- In this part we put the cast of the five main actors   -->
+           <div><h5>SONG&nbsp;  KANG&nbsp;  HO</h5></div> <!-- I used this command "&nbsp;" to add a space inside the names of the main cast-->
+           <div><h5>LEE&nbsp;  SUN&nbsp;  KYUN</h5></div>
+           <div><h5>CHO&nbsp;  YEO&nbsp;  JEONG</h5></div>
+           <div><h5>CHOI&nbsp;  WOO&nbsp;  SHIK</h5></div>
+           <div><h5>PARK&nbsp;  SO&nbsp;  DAM</h5></div>
+       </section>
+       <section>
+       <!-- In this part I put the majority of the text, names of the team members that worked in the movie
+            I used the command "&nbsp;" to add a space between the names of the main cast in the first line
+            I used a class called "small-text" for the size of the text that goes with the job titles
+            And in the last line I put the copyright statement  -->
+       <p>NEON <span class="small-text">AND </span>CJ ENTERTAINMENT <span class="small-text">PRESENT A</span> BARUNSON E&A<span class="small-text"> PRODUCTION A</span>  BONG JOON HO<span class="small-text"> FILM</span> "PARASITE" &nbsp; SONG KANG HO &nbsp; LEE SUN KYUN &nbsp;  CHO YEO JEONG &nbsp;  CHOI WOO SHIK &nbsp;  PARK SO DAM &nbsp;  LEE JUNG EUN &nbsp;  CHANG HYAE JIN &nbsp; <span class="small-text"> DIRECTED BY </span>  BONG JOON HO<br>
+           <span class="small-text">WRITEN BY</span> BONG JOON HO<span class="small-text"> SCREENPLAY BY</span> BONG JOON&nbsp; HO HAN JIN WON<span class="small-text">PRODUCED BY</span> KWAK SIN AE &nbsp;MOON YANG KWON <span class="small-text"> PRODUCER</span> MIKY LEE<span class="small-text"> EXECUTIVE</span> HEO MIN HEOI<span class="small-text"> FINANCING</span> IM MYUNG KYOON <span class="small-text">EXECUTIVE</span> LEE SONG YOUNG<span class="small-text"> PRODUCER</span> JANG YOUNG HWAN <span class="small-text">DIRECT</span> HONG KYUNG PYO<br>
+           <span class="small-text">PRODUCTION</span> LEE HA JUN <span class="small-text">DESIGN</span> CHOI SE YEON<span class="small-text"> MAKE-UP</span> KIM SEO YOUNG <span class="small-text">MUSIC BY</span> JUNG JAE IL <span class="small-text">EDITED BY</span> YANG JINMO <span class="small-text">ESPECIAL EFFECTS</span> HONG JEONG HO <span class="small-text">SUPERVISOR </span> CHOI TAE YOUNG <span class="small-text">SUPERVISOR</span> KANG HYE YOUNG <span class="small-text">SPECIAL BY</span> JUNG DO AHN &nbsp; PARK KYUNG SOO<br>
+           <span class="small-text">SPECIAL MAKE UP BY</span> KWAK TAE YONG &nbsp; HWANG HYO KYUN <span class="small-text">STORY COORDINATOR</span>  YOO SANG SUB <br>
+           ⓒ2019 CJ ENM CORPORATION BARUNSON E&A ALL RIGHTS RESERVED<br>
+       </p>
+       </section>
+       <footer>
+       <!-- In this part I put the 3 small logos-->
+           <div>
+               <img src="./img/logo_neon.png" alt="image 2">
+               <img src="./img/cjenm_logo.jpg" alt="image 3">
+               <img class="last-image" src="./img/Barun_logo.png" alt="image 4">
+           </div>
+       </footer>
+      </main>
+    </div>
+</body>
+</html>

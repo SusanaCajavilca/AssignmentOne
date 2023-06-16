@@ -1,0 +1,149 @@
+/*******************/
+/* General Styling */
+/*******************/
+
+/*In order to watch all the details of the recreated poster, please maximize the window*/
+
+body{
+    margin: 0px; /*a default setup seen in past lessons*/
+}
+
+.flex-lesson>header>nav{
+   font-family: 'Sawarabi Gothic', sans-serif; /* using a Font Sawarabi Gothic, this font will be used also for the Movie Title*/
+   background-color:#0e0e0e; /* using a black that goes soft with the eyes*/
+}
+
+.flex-lesson > header > nav > menu {
+    list-style: none; /* removing the dots from the list*/
+}
+
+.flex-lesson > header > nav > menu> li>a{
+    color: #f4f4f4;  /* using a white that goes soft with the eyes*/
+}
+
+.flex-lesson > div > main > section:first-child{
+    width: 100%;
+    height: auto;
+    background-image: url("../img/imagenotext.jpg"); /* The image with no text will be the background*/
+    /*The image that we found only has a small korean text, that was the best I could find*/
+    /*The image that we found has less space in the end than the original poster,that was the best I could find*/
+    /*The space below the legs of the dead body is shorter than the original poster, that was the best I could find */
+    background-size: cover; /* Over the image I will distribute the texts, hence recreating the poster*/
+}
+
+.flex-lesson > div > main > section:first-child > div > figure>img {
+    text-align: center; /* Setting the size of The Cannes Logo */
+    padding: 30px;
+    width: 18%; /* Making the size littler than the original */
+    height: auto;
+}
+
+.flex-lesson > div > main > section:first-child > div > figure{ /*Still working on The Cannes Logo */
+   display: flex;      /* Adjusting the proportion of the logo to the size of the window */
+   justify-content: center;   /* Setting the position at the center for the Logo */
+}
+
+h1,h2,h3,h4{
+    color: #f8f8f8; /* All the text over the image is white, and I am using a white that goes soft with the eyes*/
+}
+
+
+h2{
+    font-family: 'Lora', sans-serif; /* using a Font Lora for the awards*/
+}
+
+h1{
+    font-family: 'Sawarabi Gothic', sans-serif; /* Title of the Movie*/
+}
+
+
+h3, h4{
+    font-family: 'Montserrat', sans-serif; /* Last two lines over the image*/
+    /*Initially planned to use 5 fonts, but after working, I decided the it was better the Montserrat font than the EB Garamond*/
+}
+
+h5{
+    font-family: 'Oswald', sans-serif; /* List of the main cast of actors*/
+    color:mediumseagreen;  /* Picking a green color near to the model poster*/
+    font-size: 2em;
+}
+
+
+.flex-lesson > div > main > section:first-child > div > h2{
+    margin-top: 1px;
+    font-size: 2.5em; /* this goes for the first 4 lines: "BEST..."  */
+    transform: translateX(30px);   /* moving this text a little bit to the right */
+}
+
+.flex-lesson .big-text {
+    font-size: 1.5em;  /* this goes for the line:"2020...", because it has a bigger size than the previous lines */
+                       /* and it is still part of h2 */
+}
+
+
+.flex-lesson .MT { /*I have declared the Main Title h1 a class called MT*/
+    font-size: 17em;  /* This text has the biggest size of all the website */
+    text-align:center;  /* The position is in the center*/
+    margin-top: 580px; /* Adjusting the margin to move the element down */
+    margin-bottom: 0px;
+    transform: translateY(230px); /* Moving the element down by 230 pixels */
+}
+
+.flex-lesson > div > main > section:first-child > div > h3 {
+    font-size: 50px;
+    text-align: center; /* The position is in the center*/
+    margin-bottom: 20px;
+    transform: translateY(150px); /* Moving the element down by 150 pixels */
+}
+
+.flex-lesson .mild-text{   /*Since the font is in bold, I am making lighter the previous words before the name of the director*/
+    font-weight:5;
+}
+
+.flex-lesson > div > main > section:first-child > div > h4 {
+    font-size: 50px;
+    text-align: center;   /* The position is in the center*/
+    font-weight: lighter;  /* The last line over the image is really lighter*/
+    padding-top: 15%;
+    padding-bottom: 5%;
+    transform: translateY(50px); /* Moving the element down by 50 pixels */
+}
+
+
+.flex-lesson > div > main > section:nth-child(2){ /*This is the main cast of actors is listed*/
+    height: 90px;
+    display: flex;
+    justify-content: space-between; /* the space between the names is evenly distributed */
+    margin-top: -110px;
+}
+
+.flex-lesson > div > main > section:nth-child(3){ /*This is the parte where the names of the crew members team are listed*/
+    height: 60px;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;  /* The position of each line is in the center*/
+    font-size: 17.4px;
+}
+
+.flex-lesson .small-text{ /*This part of the text inside section 3 is smaller than the rest of the text*/
+    font-size: 0.6em; /*It is written in capital letters, but in a smaller size*/
+}
+
+.flex-lesson > div > main > footer> div > img { /*Adjusting the size of the three images*/
+    width: 5%;   /*This three logos are very small */
+    height: auto;
+    margin: 2%;
+    text-align: center;
+}
+
+.flex-lesson .last-image{ /*Adjusting the size of the last image */
+    margin: 3%;
+    height: 21px;
+    width: 110px;
+}
+
+.flex-lesson > div > main > footer> div { /*Putting the images in the right lower corner*/
+    display: flex;
+    justify-content: flex-end; /*This three logos are horizontally displayed */
+}
+
+
